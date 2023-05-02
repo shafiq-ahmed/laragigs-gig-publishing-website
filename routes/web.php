@@ -24,7 +24,7 @@ Route::get('/listings', function () {
 
 Route::get('/listings/{id}',function($id){
     return view('listing',[
-        'singularListing'=> Listings::find($id),
+        'listing'=> Listings::find($id),
         'headings'=>'Latest listings'
     ]);
 });
