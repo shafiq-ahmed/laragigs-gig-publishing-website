@@ -1,3 +1,8 @@
+@extends('layout')
+
+@section('content')
+    
+
 @if(isset($singularListing))
     
     <h1>{{$singularListing['id']}}</h1>
@@ -8,3 +13,4 @@
 @else
 <h1>There are no listings to show</h1>
 @endif
+@endsection('content')
