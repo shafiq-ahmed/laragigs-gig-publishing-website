@@ -1,4 +1,5 @@
 @props(['listing'])
+<x-card>
 <div class="flex">
     <img
         class="hidden w-48 mr-6 md:block"
@@ -37,3 +38,4 @@
         </div>
     </div>
 </div>
+</x-card>

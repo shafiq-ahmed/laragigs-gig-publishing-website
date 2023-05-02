@@ -3,7 +3,7 @@
 @section('content')
 @include('partials._hero')
 @include('partials._search')
-<div class="bg-gray-50 border border-gray-200 rounded p-6">
+
     
 
 
@@ -13,5 +13,5 @@
     <br>
     @endforeach
 @endif
-</div>
+
 @endsection('content')
