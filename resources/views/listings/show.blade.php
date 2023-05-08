@@ -1,6 +1,4 @@
-@extends('layout')
 
-@section('content')
     
 
 {{-- @if(isset($singularListing))
@@ -13,7 +11,8 @@
 @else
 <h1>There are no listings to show</h1>
 @endif --}}
-<a href="/listings" class="inline-block text-black ml-4 mb-4"
+<x-layout>
+    <a href="/listings" class="inline-block text-black ml-4 mb-4"
                 ><i class="fa-solid fa-arrow-left"></i> Back
             </a>
             <div class="mx-4 ">
@@ -61,4 +60,4 @@
                     </div>
                 </x-card>
             </div>
-@endsection('content')
+</x-layout>
