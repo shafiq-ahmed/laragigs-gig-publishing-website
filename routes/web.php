@@ -17,7 +17,11 @@ use App\Models\Listings;
 
 Route::get('/listings', [ListingController::class, 'index']);
 
+Route::get('/listings/create',[ListingController::class,'create']);
+
 Route::get('/listings/{listing}',[ListingController::class, 'show']);
+
+
 
 Route::get('/hello/{name}',function($name){
     ddd($name);

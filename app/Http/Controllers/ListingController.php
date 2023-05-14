@@ -8,7 +8,8 @@ use App\Models\Listings;
 class ListingController extends Controller
 {
     //get and show all listings
-    public function index(){
+    public function index()
+    {
         //dd(request('tag'));
         return view('listings.index',[
             'listings'=>Listings::latest()->filter(request(['tag','search']))->get()
@@ -16,9 +17,17 @@ class ListingController extends Controller
     }
 
     //show single listing
-    public function show(Listings $listing){
+    public function show(Listings $listing)
+    {
         return view('listings.show',[
             'listing'=>$listing
         ]);
+    }
+
+    //show create form
+    public function create()
+    {
+        
+        return view('listings.create');
     }
 }
