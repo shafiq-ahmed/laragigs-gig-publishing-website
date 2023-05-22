@@ -41,9 +41,11 @@ class ListingController extends Controller
             'location'=>'required',
             'email'=>['required','email'],
             'website'=>'required',
+            'description'=>'required',
             'tags'=>'required'
         ]);
         //return view('listings.create');
+        Listings::create($formFields);
         return redirect('/listings');
     }
 }
