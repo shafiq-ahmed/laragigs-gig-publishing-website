@@ -49,4 +49,32 @@ class ListingController extends Controller
         Listings::create($formFields);
         return redirect('/listings')->with('message','Listing created successfully!');
     }
+
+
+
+
+    //Practice
+
+    public function create2()
+    {
+        return view('listings.create2');
+    }
+
+    public function store2(Request $request)
+    {
+        $formFields=$request->validate([
+            'title'=>'required',
+            'email'=>['required','email',Rule::unique('listings','email')],
+            'company'=>'required',
+            'website'=>'required',
+            'tags'=>'required',
+            'description'=>'required',
+            'location'=>'required',
+        ]);
+
+        Listings::create($formFields);
+
+        return redirect('/listings');
+        
+    }
 }
