@@ -26,7 +26,8 @@ Route::get('/listings/{listing}',[ListingController::class, 'show']);
 
 //show edit form
 Route::get('/listings/{listing}/edit', [ListingController::class,'edit']);
-
+//update listing
+Route::put('listings/{listing}',[ListingController::class,'update']);
 
 Route::get('/hello/{name}',function($name){
     ddd($name);
