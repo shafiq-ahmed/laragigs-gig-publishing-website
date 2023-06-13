@@ -24,6 +24,8 @@ Route::post('/listings', [ListingController::class,'store']);
 
 Route::get('/listings/{listing}',[ListingController::class, 'show']);
 
+//show edit form
+Route::get('/listings/{listing}/edit', [ListingController::class,'edit']);
 
 
 Route::get('/hello/{name}',function($name){
