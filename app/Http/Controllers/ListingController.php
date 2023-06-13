@@ -58,7 +58,7 @@ class ListingController extends Controller
     }
 
     public function edit(Listings $listing)
-    {
-        
+    {   
+        return view('listings.edit',['listing'=>$listing]);
     }
 }
