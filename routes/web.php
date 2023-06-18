@@ -19,11 +19,9 @@ Route::get('/listings', [ListingController::class, 'index']);
 
 Route::get('/listings/create',[ListingController::class,'create']);
 
-Route::post('/listings', [ListingController::class,'store']);
+//create listing 
+Route::post('/listings/store',[ListingController::class,'store']);
 
-Route::get('/listings/create2',[ListingController::class,'create2']);
-
-Route::post('/listings',[ListingController::class,'store2']);
 
 
 Route::get('/listings/{listing}',[ListingController::class, 'show']);
