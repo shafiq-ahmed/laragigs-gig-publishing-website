@@ -8,7 +8,7 @@ Laragigs is a laravel web application which focuses on creating a stable and sec
 
 ## Features
 
-**1. Search**
+**1. Search & Filter**
 
 Search for gigs can be done by typing the search keywords or the tag keywords
 
@@ -22,5 +22,23 @@ Here the tag keyword is typed in and the results are shown
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-3.png)
 
-
 ![Laragigs Search Result Screenshot](Readme%20Attachments/search-4.png)
+
+
+
+**2. Validation**
+
+All forms are validated through laravel built-in validate() method
+
+![Create gig form Screenshot](Readme%20Attachments/validate-1.png)
+
+![Create gig form error Screenshot](Readme%20Attachments/validate-2.png)
+
+
+**3. Image Upload**
+
+![Create gig form Screenshot](Readme%20Attachments/file-1.png)
+
+![Create gig form error Screenshot](Readme%20Attachments/file-2.png) 
+
+![Create gig form error Screenshot](Readme%20Attachments/file-3.png)
