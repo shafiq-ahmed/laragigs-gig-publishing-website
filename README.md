@@ -13,10 +13,13 @@ Laragigs is a laravel web application which focuses on creating a stable and sec
 Search for gigs can be done by typing the search keywords or the tag keywords
 
 Here the search keyword is typed in and results are shown
+
 ![Laragigs Search Screenshot](Readme%20Attachments\search-1.png)
+
 ![Laragigs Search Result Screenshot](Readme%20Attachments\search-2.png)
 
 Here the tag keyword is typed in and the results are shown
 
 ![Laragigs Search Screenshot](Readme%20Attachments\search-3.png)
+
 ![Laragigs Search Result Screenshot](Readme%20Attachments\search-4.png)
