@@ -22,4 +22,5 @@ Here the tag keyword is typed in and the results are shown
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-3.png)
 
-![Laragigs Search Result Screenshot](Readme%20Attachment/search-4.png)
+
+![Laragigs Search Result Screenshot](Readme%20Attachments/search-4.png)
