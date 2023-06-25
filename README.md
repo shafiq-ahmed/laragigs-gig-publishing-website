@@ -37,8 +37,33 @@ All forms are validated through laravel built-in validate() method
 
 **3. Image Upload**
 
+Image can be uploaded along with the gig posts
+
 ![Create gig form Screenshot](Readme%20Attachments/file-1.png)
 
 ![Create gig form error Screenshot](Readme%20Attachments/file-2.png) 
 
 ![Create gig form error Screenshot](Readme%20Attachments/file-3.png)
+
+
+**4. Edit Gig**
+
+All the gig information can be edited and saved. 
+
+![Create gig form Screenshot](Readme%20Attachments/edit-1.png)
+
+![Create gig form error Screenshot](Readme%20Attachments/edit-2.png) 
+
+![Create gig form error Screenshot](Readme%20Attachments/edit-3.png)
+
+**5. Gig Deletion**
+
+Just like editing and saving gigs can be deleted as well
+
+![Create gig form Screenshot](Readme%20Attachments/edit-1.png)
+
+**6. Controllers**
+
+All the routing is handled by a controller class
+
+![Create gig form Screenshot](Readme%20Attachments/controller.png)
