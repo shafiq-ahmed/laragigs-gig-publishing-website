@@ -12,13 +12,13 @@ Laragigs is a laravel web application which focuses on creating a stable and sec
 
 Search for gigs can be done by typing the search keywords or the tag keywords
 
-Here the search keyword is typed in and results are shown
+Here the search keyword is typed in and gigs that have the keyword in their name, description or tag, are shown.
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-1.png)
 
 ![Laragigs Search Result Screenshot](Readme%20Attachments/search-2.png)
 
-Here the tag keyword is typed in and the results are shown
+Here the search keyword matches the tags in the gigs. All the gigs with that have this tag keyword is shown in the result.
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-3.png)
 
