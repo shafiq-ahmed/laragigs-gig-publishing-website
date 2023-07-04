@@ -49,4 +49,20 @@ class UserController extends Controller
     {
         return view('users.login');
     }
+
+    public function authenticate(Request $request)
+    {
+        $formfields=$request->validate([
+            'email'=>['required','email'],
+            'password'=>['required']
+        ]);
+
+        if(auth()->attempt($formfields))
+        {
+            $request->session()->regenerate();
+            return redirect('/listings')->with('message','Successfully logged in!');
+        }
+
+        return back()->withErrors(['password'=>'Invalid Credentials']);//->onlyInput();
+    }
 }

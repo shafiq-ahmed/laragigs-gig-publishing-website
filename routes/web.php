@@ -44,6 +44,8 @@ Route::post('/logout',[UserController::class,'logout']);
 
 //Show login form
 Route::get('/login',[UserController::class,'login']);
+//Login user
+Route::post('/users/authenticate',[UserController::class,'authenticate']);
 
 Route::get('/hello/{name}',function($name){
     ddd($name);

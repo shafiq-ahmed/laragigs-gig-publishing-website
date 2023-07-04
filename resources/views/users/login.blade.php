@@ -7,7 +7,7 @@
             
         </header>
 
-        <form method="post" action="/users/create">
+        <form method="post" action="/users/authenticate">
             @csrf
             <div class="mb-6">
                 <label for="email" class="inline-block text-lg mb-2"
