@@ -34,7 +34,9 @@ Route::put('listings/{listing}',[ListingController::class,'update']);
 //Delete listing
 Route::delete('/listings/{listing}',[ListingController::class,'destroy']);
 
+//show register form
 Route::get('/register',[UserController::class,'create']);
+//create new user
 Route::post('/users/create',[UserController::class,'store']);
 
 Route::get('/hello/{name}',function($name){

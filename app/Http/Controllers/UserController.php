@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -15,11 +16,22 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
+        //dd($request);
         $formfields=$request->validate([
-            'name'=>'required',
-            'email'=> ['required',Rule::unique('users','email')],
-            'password'=>'required'
+            'name'=>['required','min:3'],
+            'email'=> ['required','email',Rule::unique('users','email')],
+            'password'=>['required','confirmed','min:6']
         ]);
+
+        //Hash password
+        $formfields['password']=bcrypt($formfields['password']);
+
+        //create user
+        $user=User::create($formfields);
+
+        //Login
+        auth()->login($user);
+
+        return redirect('/listings')->with('message','User created successfully!');
     }
 }
