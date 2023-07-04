@@ -39,6 +39,9 @@ Route::get('/register',[UserController::class,'create']);
 //create new user
 Route::post('/users/create',[UserController::class,'store']);
 
+//Log user out
+Route::post('/logout',[UserController::class,'logout']);
+
 Route::get('/hello/{name}',function($name){
     ddd($name);
     return response('<h1>Hello World, I am '.$name.'</h1>')
