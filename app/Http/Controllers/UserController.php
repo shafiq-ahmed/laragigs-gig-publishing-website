@@ -35,12 +35,18 @@ class UserController extends Controller
         return redirect('/listings')->with('message','User created successfully!');
     }
 
-    public function logout(Request $request){
+    public function logout(Request $request)
+    {
         auth()->logout();
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
         return redirect('/listings')->with('message','You have been logged out');
+    }
+
+    public function login()
+    {
+        return view('users.login');
     }
 }

@@ -42,6 +42,9 @@ Route::post('/users/create',[UserController::class,'store']);
 //Log user out
 Route::post('/logout',[UserController::class,'logout']);
 
+//Show login form
+Route::get('/login',[UserController::class,'login']);
+
 Route::get('/hello/{name}',function($name){
     ddd($name);
     return response('<h1>Hello World, I am '.$name.'</h1>')
