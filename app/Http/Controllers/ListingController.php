@@ -61,6 +61,10 @@ class ListingController extends Controller
 
     public function edit(Listings $listing)
     {   
+        if($listing->user_id != auth()->id())
+        {
+            abort(403,'Unauthorized Action');
+        }
         return view('listings.edit',['listing'=>$listing]);
     }
 
