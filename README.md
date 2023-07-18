@@ -16,13 +16,9 @@ Here the search keyword is typed in and gigs that have the keyword in their name
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-1.png)
 
-![Laragigs Search Result Screenshot](Readme%20Attachments/search-2.png)
-
 Here the search keyword matches the tags in the gigs. All the gigs that have this tag is shown in the result.
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-3.png)
-
-![Laragigs Search Result Screenshot](Readme%20Attachments/search-4.png)
 
 
 
@@ -32,7 +28,6 @@ All forms are validated through laravel built-in validate() method
 
 ![Create gig form Screenshot](Readme%20Attachments/validate-1.png)
 
-![Create gig form error Screenshot](Readme%20Attachments/validate-2.png)
 
 
 **3. Image Upload**
@@ -43,24 +38,21 @@ Image can be uploaded along with the gig posts
 
 ![Create gig form error Screenshot](Readme%20Attachments/file-2.png) 
 
-![Create gig form error Screenshot](Readme%20Attachments/file-3.png)
-
 
 **4. Edit Gig**
 
 All the gig information can be edited and saved. 
 
+![Create gig form Screenshot](Readme%20Attachments/edit-2.png)
+
 ![Create gig form Screenshot](Readme%20Attachments/edit-1.png)
 
-![Create gig form error Screenshot](Readme%20Attachments/edit-2.png) 
-
-![Create gig form error Screenshot](Readme%20Attachments/edit-3.png)
 
 **5. Gig Deletion**
 
 Just like editing and saving gigs can be deleted as well
 
-![Create gig form Screenshot](Readme%20Attachments/edit-1.png)
+![Create gig form Screenshot](Readme%20Attachments/edit-2.png)
 
 **6. User Registration**
 
