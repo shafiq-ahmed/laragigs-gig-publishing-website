@@ -18,7 +18,7 @@ Here the search keyword is typed in and gigs that have the keyword in their name
 
 ![Laragigs Search Result Screenshot](Readme%20Attachments/search-2.png)
 
-Here the search keyword matches the tags in the gigs. All the gigs with that have this tag keyword is shown in the result.
+Here the search keyword matches the tags in the gigs. All the gigs that have this tag is shown in the result.
 
 ![Laragigs Search Screenshot](Readme%20Attachments/search-3.png)
 
@@ -62,8 +62,49 @@ Just like editing and saving gigs can be deleted as well
 
 ![Create gig form Screenshot](Readme%20Attachments/edit-1.png)
 
-**6. Controllers**
+**6. User Registration**
 
-All the routing is handled by a controller class
+New Users can register to the webapp. All the input fields are validated
+
+![Create gig form Screenshot](Readme%20Attachments/reg-1.png)
+
+
+Password confirmation feature is available in the registration form
+
+![Create gig form Screenshot](Readme%20Attachments/reg-2.png)
+
+
+**7. User Login**
+
+Registered users can login to the webapp
+
+![Create gig form Screenshot](Readme%20Attachments/login-1.png)
+
+
+**8. Manage Listings**
+
+Users can view all their posted listings in one page. They can choose to either edit or delete the page.
+
+![Create gig form Screenshot](Readme%20Attachments/manage-1.png)
+
+Edit and delete pages have authorization protection. Only the users that posted the gig can access these pages.
+
+![Create gig form Screenshot](Readme%20Attachments/auth-1.png)
+
+**9. Middleware**
+
+Authentication middleware is applied for user specific forms. Only logged in users can view them
+
+![Create gig form Screenshot](Readme%20Attachments/mid-1.png)
+
+**10. Controllers**
+
+All the routing is handled by controller classes
 
 ![Create gig form Screenshot](Readme%20Attachments/controller.png)
+
+
+
+
+
+
